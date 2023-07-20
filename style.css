@@ -16,8 +16,14 @@ font-family: 'Work Sans', sans-serif;
     align-items: center;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 15px;
+}
+
+.play-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
 }
 
 h2{
@@ -393,7 +399,7 @@ footer>div{
 
 
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 576px) {
 
 
     .head{
@@ -491,8 +497,9 @@ footer>div{
      }
 
     .play-icon{
-        height: 100px;
-        width: 100px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
     }
 
      .Add-one{
