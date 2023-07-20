@@ -47,7 +47,7 @@ h2{
 .navigation ul li a{
 	color:black;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 600;
 	text-transform: capitalize;
 }
 
@@ -109,6 +109,7 @@ h2{
 .description-p{
     text-align: start;
     margin: 5px 5px;
+    font-weight: 400;
 }
 
 .description-p2{
@@ -233,8 +234,6 @@ font-size: 100px;
 }
 
 
-
-/* CSS for the main image */
 .main-image {
     position: relative;
 }
@@ -247,15 +246,15 @@ font-size: 100px;
 
 .overlay-image {
     position: absolute;
-    bottom: 400px;
-    right:-40px;
+    bottom: 80px;
+    right: -40px;
     width: 35%; 
     opacity: 1;
 }
 
 .overlay-image img {
     max-width: 100%;
-    height: 300px;
+    height: 250px;
     display: block;
 }
 
@@ -346,7 +345,9 @@ font-size: 100px;
 
 
 
-
+.button-fair{
+    flex-wrap: wrap;
+}
 
 
 .second-row{
@@ -386,11 +387,12 @@ footer>div{
     display: flex;
     justify-content:center;
     align-items: center;
-    gap: 10px;
-    font-size: 30px;
+    gap: 30px;
+    font-size: 40px;
     margin-top: 22px;
     padding-bottom: 20px;
 }
+
 
 .end{
     display: flex;
@@ -542,16 +544,18 @@ footer>div{
     
     .overlay-image {
         position: absolute;
-        bottom: -100px;
-        right:-35px;
+        bottom: 300px;
+        right: 35px;
         width: 40%; 
         opacity: 1;
+
     }
     
     .overlay-image img {
         max-width: 100%;
         height: 150px;
         display: block;
+        display: none;
     }
 
     .picchi-img{
@@ -575,11 +579,29 @@ footer>div{
         flex-direction: column;
         height: 100%;
         width: auto;
+        align-items:center;
+    }
+
+    .banner-2 buttons{
+
+        align-content: center;
+        
+    }
+
+    .description-h1{
+        font-size: 30px;
+        align-self: center;
+    }
+
+    .description-p2{
+        font-size: 18px;
+        align-self:center;
+        text-align: justify;
     }
 
     .add-description>div{
 
-        font-size: -18px;
+    
         align-items: center;
         align-content: center;
         text-align: center;
@@ -587,8 +609,15 @@ footer>div{
 
     }
 
+    .add-description-h2{
+        font-size: 30px;
+        font-weight:bolder;
+    }
+
+
     .add-description h1{
         text-align: center;
+        font-size: 30px;
     }
 
 
@@ -604,11 +633,15 @@ footer>div{
         flex-direction: column;
         align-items: center;
         margin-left: 0;
+        padding-left: 15px;
     }
 
-    .funny-title{
+    .funny-title h1{
         text-align: center;
-        margin: 0 2px
+        margin: 0 2px;
+        font-size: 28px;
+        font-weight: 650;
+        
     }
 
     .funny-title>p{
@@ -621,8 +654,16 @@ footer>div{
         padding-left: 10px;
     }
 
+    .funny-videos{
+        width: 200%;
+        height: 300px;
+
+    }
+
     .button-fair{
         padding-bottom: 10px;
+        padding-left: 10px;
+        
     }
 
     footer{
@@ -635,9 +676,77 @@ footer>div{
 
     .banner>.description{
         padding: 10px;
-        align-items: center;
+        align-items: center;}
 
-    
+        footer .navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 55px;
+
+        }
+        
+        footer .navigation ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px  15px;
+            font-size: 25px;
+        }
+        footer .navigation ul li a{
+            color:black;
+            text-decoration: none;
+            font-weight: 500;
+            gap: 2px;
+            text-transform: capitalize;
+        }
+
+        
+        .social{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: 18px;
+            font-size: 30px;
+            margin-top: 22px;
+            padding-bottom: 20px;
+        }
+
+
+        
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: auto;
+    height: 100vh;
+    margin: 10px auto;
+}
+
+
+
+/* CSS for the main image */
+.main-image {
+    position: relative;
+}
+
+.main-image img {
+    max-width: 370px;
+    height: 400px;
+    display: block;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: -50px;
+    right:-50px;
+    width: 35%; 
+    opacity: 1;
+}
+
+.overlay-image img {
+    max-width: 100%;
+    height: 180px;
+    display: block;
 }
 
 }
