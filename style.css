@@ -168,12 +168,13 @@ font-size: 100px;
 
 .Add-one{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     flex-direction: row-reverse;
     align-items: center;
     margin-top: 100px;
     margin-left: 355px;
     margin-right: 25px;
+    gap:20px;
 }
 
 
@@ -242,13 +243,13 @@ font-size: 100px;
     position: absolute;
     bottom: 400px;
     right:-40px;
-    width: 30%; 
+    width: 35%; 
     opacity: 1;
 }
 
 .overlay-image img {
     max-width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
 }
 
@@ -491,17 +492,52 @@ footer>div{
      .Add-one{
         display: flex;
         flex-direction: column;
+        align-items: center;
+     }
+
+     .add-description h1,p{
+        font-size: 18px;
+        text-align: start;
      }
      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(1, 30px);
-        grid-template-rows: repeat();
-      
+     
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        width: auto;
+        height: 100vh;
+        margin: 5px auto;
     }
     
-    .main-image{
-        width: 200px;
-        height: 400px;
+    
+    
+    /* CSS for the main image */
+    .main-image {
+        position: relative;
+
+    }
+    
+    .main-image img {
+        max-width: 300px;
+        height: 300px;
+        display: block;
+        padding-left: -100px;
+        padding-top: -10px;
+        padding-bottom: 250px;
+    }
+    
+    .overlay-image {
+        position: absolute;
+        bottom: -100px;
+        right:-35px;
+        width: 40%; 
+        opacity: 1;
+    }
+    
+    .overlay-image img {
+        max-width: 100%;
+        height: 150px;
+        display: block;
     }
 
     .picchi-img{
@@ -520,7 +556,74 @@ footer>div{
         justify-self:end;
     }
 
+    .banner-2{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: auto;
+    }
 
+    .add-description>div{
+
+        font-size: -18px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding-left: 10px;
+
+    }
+
+    .add-description h1{
+        text-align: center;
+    }
+
+
+    body{
+        margin-right: 0;
+        scroll-behavior: smooth;
+    }
+
+ 
+
+    .Add-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .funny-title{
+        text-align: center;
+        margin: 0 2px
+    }
+
+    .funny-title>p{
+        padding-left: 15px;
+    }
+
+    .funny-container{
+        align-items: center;
+        align-content: center;
+        padding-left: 10px;
+    }
+
+    .button-fair{
+        padding-bottom: 10px;
+    }
+
+    footer{
+        width: 100%;
+        margin-left: 0;
+        background-color: aliceblue;
+        padding-left: 19px;
+    }
+
+
+    .banner>.description{
+        padding: 10px;
+        align-items: center;
 
     
+}
+
 }
