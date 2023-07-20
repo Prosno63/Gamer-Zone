@@ -294,7 +294,7 @@ font-size: 100px;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color:transparent;
+    background-color: black;
     opacity: 0.4;
     overflow: hidden;
     width: 100%;
@@ -322,13 +322,14 @@ font-size: 100px;
 
     transition: width 2s;
     gap: 10px;
+    border: transparent;
 
   }  
 
 
   .btn-img:hover {
     transform: scale(1.05);
-    border: transparent;
+    border: 1px solid black;
     font-size: 17px;
     color: aqua;
 
